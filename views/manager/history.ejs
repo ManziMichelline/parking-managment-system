@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parking History</title>
+</head>
+<body>
+  <h1>Parking History</h1>
+  <a href="/manager/dashboard">Back to Dashboard</a>
+  <ul>
+    <% history.forEach(vehicle => { %>
+      <li><%= vehicle.plate_number %> - Entry: <%= vehicle.entry_time %> - Exit: <%= vehicle.exit_time %> - Fee: <%= vehicle.fee %> RWF</li>
+    <% }) %>
+  </ul>
+</body>
+</html>
